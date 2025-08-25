@@ -1,41 +1,44 @@
 # 🚀 OpenAI Agents SDK with Multiple LLM Providers  
 
-This repository demonstrates how to use the **OpenAI Agents SDK** with both **OpenAI** and **Non-OpenAI LLMs** (like **Groq, Gemini, Claude, DeepSeek, Moonshot**, etc.).  
-
-The SDK is designed with two principles:  
-- **Enough features to be worth using**, but **minimal primitives to learn fast**  
-- **Works out of the box**, but highly **customizable for production**  
-
----
-
-## ✨ Why Use OpenAI Agents SDK?  
-
-- 🔁 **Agent Loop**: Built-in loop to call tools, send results to LLMs, and iterate until completion  
-- 🐍 **Python-First**: Orchestrate and chain agents with native Python  
-- 🤝 **Handoffs**: Coordinate tasks across multiple agents  
-- ✅ **Guardrails**: Validate inputs/outputs with early breaks  
-- 💬 **Sessions**: Automatic conversation history management  
-- 🛠 **Function Tools**: Any Python function → Agent Tool (with schema validation)  
-- 📊 **Tracing**: Debug, monitor, evaluate, and fine-tune workflows  
-
----
+This repository shows how to use the **OpenAI Agents SDK** with both **OpenAI** and **Non-OpenAI LLMs** (Groq, Gemini, Claude, DeepSeek, Moonshot, etc.).  
 
 ## 📦 Installation  
 
 ```bash
-# Create a project
-mkdir my_project && cd my_project
-
-# Create virtual environment
 python -m venv .venv
+source .venv/bin/activate   # or .venv\Scripts\activate on Windows
+pip install openai-agents python-dotenv
+```
 
-# Activate it
-source .venv/bin/activate   # Mac/Linux
-.venv\Scripts\activate      # Windows
+## 🔐 Setup  
 
-# Install the SDK
-pip install openai-agents
+Create `.env` with your API keys:  
 
-# Install dotenv for environment variables
-pip install python-dotenv
+```env
+OPENAI_API_KEY=your_openai_key_here
+GROQ_API_KEY=your_groq_key_here
+```
 
+## 🚦 Run Example  
+
+```bash
+python personal_agent.py
+```
+
+Example Output:  
+
+```
+CALLING AGENT...
+
+"Here are today’s trending AI updates..."
+```
+
+## 🌐 Supported Providers  
+- OpenAI (GPT-4.1, GPT-4o)  
+- Groq (Llama3, Mixtral)  
+- Gemini (1.5, 2.0)  
+- Claude (3-opus, 3-haiku)  
+- DeepSeek  
+- Moonshot  
+
+MIT License © 2025  
