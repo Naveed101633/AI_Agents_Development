@@ -38,3 +38,20 @@ pip install openai-agents
 
 # Install dotenv for environment variables
 pip install python-dotenv
+
+🔐 Environment Setup
+
+Create a .env file in the root of your project and add your LLM API keys.
+You can use any provider (OpenAI, Groq, Gemini, Claude, DeepSeek, etc.):
+
+OPENAI_API_KEY=your_openai_key_here
+GROQ_API_KEY=your_groq_key_here
+GEMINI_API_KEY=your_gemini_key_here
+CLAUDE_API_KEY=your_claude_key_here
+
+🚦 Quickstart: Build Your First Agent
+
+We’ll build a Personal Research Agent that updates you with trending news in tech, society, and opportunities.
+
+Run the Agent
+python personal_agent.py
