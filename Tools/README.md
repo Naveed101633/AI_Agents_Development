@@ -1,43 +1,35 @@
-🛠️ Tools in OpenAI Agents SDK
+**🛠️ Tools in OpenAI Agents SDK**
 
 Tools let agents take real-world actions: fetching data, running code, calling APIs, and even using other agents.
 They’re what make agents more than just chatbots — they become problem-solvers.
 
 The Agents SDK supports three main classes of tools:
 
-Hosted Tools → run on LLM servers (retrieval, web search, computer use).
+1. Hosted Tools → run on LLM servers (retrieval, web search, computer use).
 
-Function Calling → turn any Python function into a tool automatically.
+2. Function Calling → turn any Python function into a tool automatically.
 
-Agents as Tools → let agents call other agents.
+3. Agents as Tools → let agents call other agents.
 
-📌 Function Tools
+**📌 Function Tools**
 
 Function tools are the most flexible:
 
-The tool name comes from the function name (or you can override).
+1. The tool name comes from the function name (or you can override).
+2. The description comes from the docstring (or you can override).
+3. The schema for inputs is generated automatically from the function signature.
+4. Argument descriptions are parsed from the docstring.
 
-The description comes from the docstring (or you can override).
-
-The schema for inputs is generated automatically from the function signature.
-
-Argument descriptions are parsed from the docstring.
-
-⚠️ What if the tool fails?
-
+**⚠️ What if the tool fails?**
 In the real world, tools fail all the time due to:
 
-API timeouts
-
-Bad credentials
-
-Invalid input
-
-Server not reachable
-
-Bugs in the code
-
+- API timeouts
+- Bad credentials
+- Invalid input
+- Server not reachable
+- Bugs in the code
 That’s why failure_error_function exists — so your agent doesn’t crash when a tool fails.
+
 
 | Name                     | Type              | Description                                     | Default                       |
 | ------------------------ | ----------------- | ----------------------------------------------- | ----------------------------- |
