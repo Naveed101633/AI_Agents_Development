@@ -27,7 +27,7 @@ This project implements a **multi-agent research framework** that plans, searche
 ## 📊 Example Run
 
 ```bash
-(Agents) PS C:\Users\PMYLS\Desktop\OpenAI SDK\Agents> uv run Tools.py
+(Agents) PS C:\Users\PMYLS\Desktop\OpenAI SDK\Agents> uv run research_agent.py
 Sample Output (Query: "Give me updates in the world of tech?")
 markdown
 Copy code
