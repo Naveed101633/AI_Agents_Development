@@ -109,7 +109,7 @@ bash
 Copy code
 uv run research_agent.py
 ```
-## ✨ Key Features
+## ✨ Possible Expansion in Future:
 
 1. Expand hybrid search with domain-specific APIs (finance, medical, scientific).
 2. Improve citation granularity with per-claim source mapping.
