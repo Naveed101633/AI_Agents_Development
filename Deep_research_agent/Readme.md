@@ -108,10 +108,10 @@ Run with:
 bash
 Copy code
 uv run research_agent.py
+```
+## ✨ Key Features
 
-# 📌 Future Expansion:
-
- Expand hybrid search with domain-specific APIs (finance, medical, scientific).
- Improve citation granularity with per-claim source mapping.
- Add streaming output with live report drafting.
- Extend agent memory for multi-turn research sessions.
+1. Expand hybrid search with domain-specific APIs (finance, medical, scientific).
+2. Improve citation granularity with per-claim source mapping.
+3. Add streaming output with live report drafting.
+4. Extend agent memory for multi-turn research sessions.
